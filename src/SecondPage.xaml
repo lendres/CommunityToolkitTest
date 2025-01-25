@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UnlockingFlyout.MainPage">
+             x:Class="UnlockingFlyout.SecondPage">
+
+	<!--<Shell.BackButtonBehavior>
+		<BackButtonBehavior
+            Command="{Binding BackCommand}"
+            BindingContext="{Binding Source={x:Reference self}, Path=BindingContext}"/>
+	</Shell.BackButtonBehavior>-->
 
     <ScrollView>
         <VerticalStackLayout
@@ -11,16 +17,16 @@
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+                SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Main Page"
+                Text="Second Page"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Button
-                Text="Navigate to Second Page" 
-                Clicked="OnNavigateForward"
+                Text="Go Back" 
+                Clicked="OnNavigateBack"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>

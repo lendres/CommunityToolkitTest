@@ -1,13 +1,15 @@
-﻿using CommunityToolkit.Mvvm.Input;
-
-namespace MenuTest;
-
-public partial class MainPage : ContentPage
+﻿namespace UnlockingFlyout
 {
-    public MainPage()
-    {
-        InitializeComponent();
-		MainViewModel viewModel = (BindingContext as MainViewModel)!;
-		viewModel.MenuHostingPage = this;
-    }
+	public partial class MainPage : ContentPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+		}
+
+		private void OnNavigateForward(object sender, EventArgs e)
+		{
+			Shell.Current.GoToAsync(nameof(SecondPage), true, new Dictionary<string, object> { });
+		}
+	}
 }
