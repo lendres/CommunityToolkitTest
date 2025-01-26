@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MenuTest.MainPage">
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:MenuTest"
+    x:DataType="vm:MainViewModel"
+    x:Class="MenuTest.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout
@@ -17,6 +24,11 @@
                 Text="Main Page"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                Text="{Binding CountMessage}" 
+                Command="{Binding IncrementCommand}"
+                HorizontalOptions="Fill" />
 
             <Button
                 Text="Navigate to Second Page" 
