@@ -11,7 +11,7 @@ public partial class MainViewModel : ObservableObject
 	public partial int Count { get; set; } = 0;
 
 	[ObservableProperty]
-	public partial string CountMessage { get; set; } = "Click Count";
+	public partial string? CountMessage { get; set; } = null;
 
 	public MainViewModel()
     {
