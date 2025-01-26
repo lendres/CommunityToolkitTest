@@ -11,10 +11,10 @@
         <vm:MainViewModel/>
     </ContentPage.BindingContext>
 
-    <ContentPage.Resources>
+    <!--<ContentPage.Resources>
         <toolkit:IsNullConverter x:Key="IsNullConverter"/>
         <toolkit:IsNotNullConverter x:Key="IsNotNullConverter"/>
-    </ContentPage.Resources>
+    </ContentPage.Resources>-->
 
     <ScrollView>
         <VerticalStackLayout
@@ -34,7 +34,6 @@
             <Label
                 Text="{Binding CountMessage}"
                 Style="{StaticResource SubHeadline}"
-                IsVisible="{Binding CountMessage, Converter={StaticResource IsNotNullConverter}}"
                 SemanticProperties.HeadingLevel="Level3" />
 
             <Button
