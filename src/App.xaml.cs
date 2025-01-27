@@ -1,4 +1,4 @@
-﻿namespace MenuTest
+﻿namespace Test
 {
     public partial class App : Application
     {

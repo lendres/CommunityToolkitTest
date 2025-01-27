@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MenuTest
+namespace Test
 {
     public class Program
     {

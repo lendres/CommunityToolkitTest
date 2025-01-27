@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace MenuTest;
+namespace Test;
 
 public partial class MainViewModel : ObservableObject
 {

@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:MenuTest.MainViewModel.GetSubMenuFlyoutItem(Microsoft.Maui.Controls.MenuFlyoutSubItem,System.String)~Microsoft.Maui.IMenuFlyoutItem")]
+[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:Test.MainViewModel.GetSubMenuFlyoutItem(Microsoft.Maui.Controls.MenuFlyoutSubItem,System.String)~Microsoft.Maui.IMenuFlyoutItem")]

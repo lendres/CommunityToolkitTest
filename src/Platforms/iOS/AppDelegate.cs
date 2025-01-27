@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace MenuTest
+namespace Test
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate
